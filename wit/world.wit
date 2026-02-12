@@ -1,0 +1,26 @@
+package component:add;
+
+interface types {
+    enum operation {
+        add,
+        sub,
+        mul,
+        div
+    }
+
+    record cat {
+        name: string,
+        age: u32
+    }
+
+    hello-world: func() -> string;
+
+    new-cat: func() -> cat;
+
+    age: func() -> u32;
+
+}
+
+world example {
+    export types;
+}
